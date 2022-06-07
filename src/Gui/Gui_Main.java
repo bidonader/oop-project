@@ -19,19 +19,22 @@ import javax.swing.*;
 import java.util.*;
 /**
  *
- * @author dark-
+ * @author laptop
  */
 public class Gui_Main extends JFrame implements files{
+    
 
     
    static JButton Admin,Info,search;
    static JTextField j1,j2;
    Accounts acc;
     public Gui_Main getMain() {
+        setVisible(true);
         return this;
     }
     ArrayList<String> arr = new ArrayList<String>();
     HashMap<String, ArrayList<String>> hash = new HashMap<String, ArrayList<String>>();
+    
     public void read() {
         File file = new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\hotels.txt");
         try {
@@ -65,8 +68,10 @@ public class Gui_Main extends JFrame implements files{
     public void update() {}
 
     public Gui_Main(Accounts u1) throws IOException{
+    
         read();
-         setTitle("MyTrip");
+             
+         setTitle("MyTrip details");
          acc = u1;
          setSize(1000,350);
          setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -75,7 +80,8 @@ public class Gui_Main extends JFrame implements files{
          JLabel Uname,rec,empty;
          JPasswordField p,repetedp;
          JComboBox recbox;
-         BufferedImage img = ImageIO.read(new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\logo.jpg")); 
+         BufferedImage img = ImageIO.read(new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\travel\\logo.jpg"));
+                
          try
          {
            
@@ -96,6 +102,7 @@ public class Gui_Main extends JFrame implements files{
              j1      = new JTextField("");
              j1.setBounds(200, 200 , 600 ,30);
              //read from the file 3 rand hotels 
+      
 
              
              recbox=new JComboBox();
@@ -144,7 +151,9 @@ public class Gui_Main extends JFrame implements files{
              System.out.print("error");
                System.out.println(e);
         }
+        
         //this.add();
+
         
      }
    private class listener implements ActionListener {
