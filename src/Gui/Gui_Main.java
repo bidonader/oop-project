@@ -80,7 +80,7 @@ public class Gui_Main extends JFrame implements files{
          JLabel Uname,rec,empty;
          JPasswordField p,repetedp;
          JComboBox recbox;
-         BufferedImage img = ImageIO.read(new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\travel\\logo.jpg"));
+         BufferedImage img = ImageIO.read(new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\travel\\logo.png"));
                 
          try
          {

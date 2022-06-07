@@ -1,8 +1,2 @@
-karim sfsgfgsf@yahoo.com 12345 3 4 1950 1
-karim kikos300@yahoo.com 12345 3 4 1950 1
-alby zengy@hotmail.com 98765 4 3 2000 0
-yehia yehia@yahoo.com 54321 3 4 1988 0
-ahmed ahmed25@hotmail.com password 2 3 2000 0
-marwan marwan12@gmail.com password123 2 3 2000 0
 bedo bedo@email.com bedo123 1 1 1952 0
-karara ahmed@email.com pass123 1 1 1953 0
+
