@@ -34,7 +34,7 @@ public class Gui_Creditcard extends JFrame implements files{
     public void write(String saveData) {
         try {
             String str = "Hello";
-            File file = new File("C:\\Users\\Ahmed\\Documents\\NetBeansProjects\\travel\\src\\Gui\\credit.txt");
+            File file = new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\credit.txt");
             BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
             PrintWriter pr = new PrintWriter(writer);
             pr.println(saveData);

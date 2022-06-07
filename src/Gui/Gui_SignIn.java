@@ -27,9 +27,9 @@ public class Gui_SignIn extends JFrame implements ActionListener ,Serializable, 
     JTextField t1;
     JPasswordField p;
     JLabel Background = new JLabel();     
-    Accounts a=new Accounts();
+    Accounts account =new Accounts();
     public void read() {
-        File file = new File("C:\\Users\\Ahmed\\Documents\\NetBeansProjects\\travel\\src\\Gui\\accounts.txt");
+        File file = new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\accounts.txt");
         try {
             
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -44,21 +44,21 @@ public class Gui_SignIn extends JFrame implements ActionListener ,Serializable, 
                     int pas = st.indexOf(" ", email1+1);
                     String pass = st.substring(email1+1, pas);
                     if (p.getText().equals(pass)) {
-                        a.Fullname(name);
-                        a.setEmail(mail);
-                        a.setPassword(pass);
+                        account.Fullname(name);
+                        account.setEmail(mail);
+                        account.setPassword(pass);
                         int ds = st.indexOf(" ", pas+1);
                         int day = Integer.parseInt(st.substring(pas+1, ds));
                         int ms = st.indexOf(" ", ds+1);
                         int month = Integer.parseInt(st.substring(ds+1, ms));
                         int ys = st.indexOf(" ", ms+1);
                         int year = Integer.parseInt(st.substring(ms+1, ys));
-                        a.SetDate(day, month, year);
+                        account.SetDate(day, month, year);
                         int adminsss = st.indexOf(" ", ys+1);
                         int admin = Integer.parseInt(st.substring(ys+1, ys+2));
-                        a.setadmin((admin==1));
+                        account.setadmin((admin==1));
                         setVisible(false);
-                        Gui_Main mai = new Gui_Main(a);
+                        Gui_Main mai = new Gui_Main(account);
                         mai.setVisible(true);
                     }
                 } catch (StringIndexOutOfBoundsException n) {

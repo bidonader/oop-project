@@ -6,19 +6,14 @@
 package Gui;
 import travel.Accounts;
 import java.awt.Container;
-import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.util.*;
@@ -38,7 +33,7 @@ public class Gui_Main extends JFrame implements files{
     ArrayList<String> arr = new ArrayList<String>();
     HashMap<String, ArrayList<String>> hash = new HashMap<String, ArrayList<String>>();
     public void read() {
-        File file = new File("C:\\Users\\Ahmed\\Documents\\NetBeansProjects\\travel\\src\\Gui\\hotels.txt");
+        File file = new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\hotels.txt");
         try {
             
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -80,8 +75,7 @@ public class Gui_Main extends JFrame implements files{
          JLabel Uname,rec,empty;
          JPasswordField p,repetedp;
          JComboBox recbox;
-         BufferedImage img = ImageIO.read(new File("C:\\Users\\Ahmed\\Documents\\NetBeansProjects\\travel\\src\\travel\\logo.jpg")); 
-           //Font myFont=new Font(Itallic,,50);
+         BufferedImage img = ImageIO.read(new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\logo.jpg")); 
          try
          {
            

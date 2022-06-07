@@ -25,7 +25,7 @@ import travel.*;
 public class Gui_SignUp  extends JFrame implements files {
     ArrayList<String> lis = new ArrayList<String>();
     public void read() {
-        File file = new File("C:\\Users\\Ahmed\\Documents\\NetBeansProjects\\travel\\src\\Gui\\accounts.txt");
+        File file = new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\accounts.txt");
         try {
             
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -47,7 +47,7 @@ public class Gui_SignUp  extends JFrame implements files {
     public void write(String saveData) {
         try {
             String str = "Hello";
-            File file = new File("C:\\Users\\Ahmed\\Documents\\NetBeansProjects\\travel\\src\\Gui\\accounts.txt");
+            File file = new File("C:\\Users\\M. HAWASH\\Desktop\\oop-project\\src\\Gui\\accounts.txt");
             BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
             PrintWriter pr = new PrintWriter(writer);
             pr.println(saveData);
